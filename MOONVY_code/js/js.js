@@ -43,7 +43,7 @@ function showSlidesMobile() {
 	} catch {
 		console.log('cannot read style property')
 	}
-	setTimeout(showSlidesMobile, 5000); // Change image every 2 seconds
+	setTimeout(showSlidesMobile, 5000);
 }
 
 
@@ -202,13 +202,12 @@ function closeMenu() {
 
 
 
-/* slideshow*/
+/* slideshow - https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
 
-// Thumbnail image controls
 function currentSlide(n) {
 	showSlides(slideIndex = n);
 }
