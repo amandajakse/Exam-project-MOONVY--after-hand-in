@@ -2,314 +2,400 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Original and Handmade jewellery for every occasion made with love by MOONVY Jewellery. See our newest prodcuts here.">
-	<meta name="keywords" content="jewellery, MOONVY, MOONVY Jewellery, New Arrivals, On Sale, sale jewellery, new products, asian fashion, asian jewellery, k-pop jewellery, k-pop, asian fashion style, earrings, necklaces, earring, necklace, jewellery set, cute jewellery, original jewellery, handmade jewellery,  accessories,tiktok jewellery, jewelry">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Original and Handmade jewellery for every occasion made with love by MOONVY Jewellery. See our newest prodcuts here.">
+    <meta name="keywords" content="jewellery, MOONVY, MOONVY Jewellery, New Arrivals, On Sale, sale jewellery, new products, asian fashion, asian jewellery, k-pop jewellery, k-pop, asian fashion style, earrings, necklaces, earring, necklace, jewellery set, cute jewellery, original jewellery, handmade jewellery,  accessories,tiktok jewellery, jewelry">
 
-	<link rel="stylesheet" href="css/mystyle.css">
-	<link rel="stylesheet" href="css/frontpage.css">
-	<title>MOONVY Jewelery | Home</title>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+    <link rel="stylesheet" href="css/chatbox.css">
+    <title>MOONVY Jewelery | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-	<header class="navigation_container">
-		<div class="header_top">
+    <header class="navigation_container">
+        <div class="header_top">
 
-			<!-- mobile menu -->
+            <!-- mobile menu -->
 
-			<span class="mobileicon" onclick="openMenu()">&#9776;</span>
+            <span class="mobileicon" onclick="openMenu()">&#9776;</span>
 
-			<div id="overlay" class="overlay">
+            <div id="overlay" class="overlay">
 
-				<a class="x_button" onclick="closeMenu()">&times;</a>
+                <a class="x_button" onclick="closeMenu()">&times;</a>
 
-				<div class="overlay-links">
-					<a class="overlay_link" href="shop.html">SHOP</a>
-					<a class="overlay_link" href="about.html">ABOUT</a>
-					<a class="overlay_link" href="contact.html">Contact</a>
+                <div class="overlay-links">
+                    <a class="overlay_link" href="shop.html">SHOP</a>
+                    <a class="overlay_link" href="about.html">ABOUT</a>
+                    <a class="overlay_link" href="contact.html">Contact</a>
 
-					<div>
-						<a href="#"><img class="menu_some_icon" alt="instagram icon" src="pictures/white-instagram-icon-png.png"></a>
+                    <div>
+                        <a href="#"><img class="menu_some_icon" alt="instagram icon" src="pictures/white-instagram-icon-png.png"></a>
 
-						<a href="#"><img class="menu_some_icon" alt="instagram icon" src="pictures/tiktok-48.png"></a>
-					</div>
-				</div>
+                        <a href="#"><img class="menu_some_icon" alt="instagram icon" src="pictures/tiktok-48.png"></a>
+                    </div>
+                </div>
 
-				<a href="index.html"><img class="menu_logo" alt="logo" src="pictures/logo.png"></a>
+                <a href="index.html"><img class="menu_logo" alt="logo" src="pictures/logo.png"></a>
 
-			</div>
+            </div>
 
-			<!--The logo -->
-			<a href="index.html"><img alt="logo" src="pictures/logo.png" class="companylogo"></a>
+            <!--The logo -->
+            <a href="index.html"><img alt="logo" src="pictures/logo.png" class="companylogo"></a>
 
-			<!-- search -->
-			<img alt="search icom" src="pictures/search_icon.PNG" class="search_icon">
+            <!-- search -->
+            <img alt="search icom" src="pictures/search_icon.PNG" class="search_icon">
 
-			<!-- Link to shopping cart -->
-			<a href="checkout.html"><img alt="bag icom" src="pictures/shoppingbag_icon.PNG" class="bag_icon"></a>
+            <!-- Link to shopping cart -->
+            <a href="checkout.html"><img alt="bag icom" src="pictures/shoppingbag_icon.PNG" class="bag_icon"></a>
 
-		</div>
+        </div>
 
-		<nav>
+        <nav>
 
-			<!-- Menu items -->
-			<div class="menuitems_container">
-				<a href="shop.html" class="menuitem underline_on_hover">Shop</a>
-				<a href="about.html" class="menuitem underline_on_hover">About</a>
-				<a href="contact.html" class="menuitem underline_on_hover">Contact</a>
+            <!-- Menu items -->
+            <div class="menuitems_container">
+                <a href="shop.html" class="menuitem underline_on_hover">Shop</a>
+                <a href="about.html" class="menuitem underline_on_hover">About</a>
+                <a href="contact.html" class="menuitem underline_on_hover">Contact</a>
 
 
-			</div>
+            </div>
 
-		</nav>
+        </nav>
 
-	</header>
+    </header>
 
 
 
-	<main>
+    <main>
 
-		<section class="desktop">
 
-			<div class="section1">
 
-				<div class="container">
+        <!-- Chat box based on example on codepe.io by Mehmet mert
+link: https://codepen.io/mehmetmert/pen/zbKpv -->
 
-					<img src="pictures/banner_picture_1.jpg" alt="woman with necklace" id="image" class="big_image">
+        <div id="live-chat" class="live_chat">
 
-					<img alt="colour overlay" class="color_overlay" src="pictures/Rectangle%2024.png">
+            <header class="clearfix">
 
+                <a href="#" class="chat-close">x</a>
 
-					<div class="big_image_elements">
-						<h1 style="color: white">NEW ARRIVALS</h1> <br>
-						<form method="get" action="shop.html">
-							<button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
-						</form>
+                <h4>MOONVY Jewellery</h4>
 
+            </header>
 
-					</div>
+            <div class="chat">
 
-					<img src="pictures/Path%2036.png" alt="arrow" class="arrow bounce">
+                <div class="chat-history">
 
+                    <div class="chat-message clearfix">
 
+                        <img src="pictures/chatbox_img.png" alt="chat icon" width="32" height="32">
 
-				</div>
+                        <div class="chat-message-content clearfix">
 
+                            <span class="chat-time">Now</span>
 
-			</div>
+                            <h5>MOONVY</h5>
 
-			<div class="section2">
+                            <p>Hello! Can help you with anything?</p>
 
-				<h2>NOW TRENDING</h2>
+                        </div> <!-- end chat-message-content -->
 
-				<div class="front_page_images">
+                    </div> <!-- end chat-message -->
 
-					<a href="shop.html" class="front_page_image_link">
-						<img src="pictures/bear_product_1.jpg" alt="picture of product" class="front_page_image">
-					</a>
+                    <hr>
 
-					<a href="shop.html" class="front_page_image_link">
-						<img src="pictures/Group%2016.png" alt="picture of product" class="front_page_image">
-					</a>
 
-					<a href="shop.html" class="front_page_image_link">
-						<img src="pictures/Crystal_product_2.jpg" alt="picture of product" class="front_page_image">
-					</a>
-				</div>
+                    <hr>
 
+                    <div class="chat-message clearfix">
 
-				<form method="get" action="shop.html">
-					<button class="button" type="submit">DISCOVER MORE</button>
-				</form>
+                        <img src="pictures/chatbox_img.png" alt="chat icon" width="32" height="32">
 
-			</div>
+                        <div class="chat-message-content clearfix">
 
-			<div class="container">
+                            <span class="chat-time">Now</span>
 
-				<img src="pictures/banner_picture_2.jpg" alt="picture of woman with 2 necklaces" class="picture_middle">
+                            <h5>MOONVY</h5>
 
-				<img alt="colour overlay" class="color_overlay" src="pictures/Rectangle%2024.png">
+                            <p>Do you need any assistance?</p>
 
-				<div class="big_image_elements">
-					<h1 style="color: white;">JEWELLERY SETS</h1> <br>
-					<form method="get" action="shop.html">
-						<button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
-					</form>
+                        </div> <!-- end chat-message-content -->
 
-				</div>
+                    </div> <!-- end chat-message -->
 
-			</div>
+                    <hr>
 
-			<div class="section2">
+                </div> <!-- end chat-history -->
 
-				<h2>ON SALE</h2>
-				<div class="front_page_images">
 
-					<a href="shop.html" class="front_page_image_link">
-						<img src="pictures/Image%2012.png" alt="picture of product" class="front_page_image">
-					</a>
+                <form action="#" method="post">
 
-					<a href="shop.html" class="front_page_image_link">
-						<img src="pictures/butterfly_ptoduct_2.jpg" alt="picture of product" class="front_page_image">
-					</a>
+                    <fieldset>
 
-					<a href="shop.html" class="front_page_image_link">
-						<img src="pictures/Image%2013.png" alt="picture of product" class="front_page_image">
-					</a>
-				</div>
+                        <input type="text" placeholder="Message MOONVY..." autofocus>
+                        <input type="hidden">
 
+                    </fieldset>
 
-				<form method="get" action="shop.html">
-					<button class="button" type="submit">DISCOVER MORE</button>
-				</form>
+                </form>
 
-			</div>
+            </div> <!-- end chat -->
 
-		</section>
+        </div> <!-- end live-chat -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
 
 
-		<!-- mobile version o front page -->
 
-		<section class="mobile">
 
-			<div class="container">
 
-				<img src="pictures/images_for_mobile/mobile_banner_1.jpg" alt="woman with necklace" class="big_image">
+        <section class="desktop">
 
-				<img alt="colour overlay" class="color_overlay" src="pictures/Rectangle%2033.png">
+            <div class="section1">
 
+                <div class="container">
 
-				<div class="big_image_elements">
+                    <img src="pictures/banner_picture_1.jpg" alt="woman with necklace" id="image" class="big_image">
 
-					<h1 style="color: white">NEW ARRIVALS</h1> <br>
+                    <img alt="colour overlay" class="color_overlay" src="pictures/Rectangle%2024.png">
 
-					<form method="get" action="shop.html">
-						<button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
-					</form>
 
+                    <div class="big_image_elements">
+                        <h1 style="color: white">NEW ARRIVALS</h1> <br>
+                        <form method="get" action="shop.html">
+                            <button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
+                        </form>
 
-				</div>
 
-				<img src="pictures/Path%2036.png" alt="arrow" class="arrow bounce">
+                    </div>
 
-			</div>
+                    <img src="pictures/Path%2036.png" alt="arrow" class="arrow bounce">
 
-			<div class="container">
 
-				<img src="pictures/images_for_mobile/mobile_banner_2.jpg" alt="woman with necklace" class="big_image">
 
+                </div>
 
-				<div class="big_image_elements_mobile">
 
-					<h1 style="color: white">NOW TRENDING</h1> <br>
+            </div>
 
-					<form method="get" action="shop.html">
-						<button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
-					</form>
+            <div class="section2">
 
-				</div>
+                <h2>NOW TRENDING</h2>
 
-			</div>
+                <div class="front_page_images">
 
-			<div class="container">
+                    <a href="shop.html" class="front_page_image_link">
+                        <img src="pictures/bear_product_1.jpg" alt="picture of product" class="front_page_image">
+                    </a>
 
-				<img src="pictures/images_for_mobile/mobile_banner_3.jpg" alt="woman with necklace" class="big_image">
+                    <a href="shop.html" class="front_page_image_link">
+                        <img src="pictures/Group%2016.png" alt="picture of product" class="front_page_image">
+                    </a>
 
-				<img alt="colour overlay" class="color_overlay" src="pictures/Rectangle%2033.png">
+                    <a href="shop.html" class="front_page_image_link">
+                        <img src="pictures/Crystal_product_2.jpg" alt="picture of product" class="front_page_image">
+                    </a>
+                </div>
 
 
-				<div class="big_image_elements">
+                <form method="get" action="shop.html">
+                    <button class="button" type="submit">DISCOVER MORE</button>
+                </form>
 
-					<h1 style="color: white">JEWELLERY SETS</h1> <br>
+            </div>
 
-					<form method="get" action="shop.html">
-						<button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
-					</form>
+            <div class="container">
 
-				</div>
+                <img src="pictures/banner_picture_2.jpg" alt="picture of woman with 2 necklaces" class="picture_middle">
 
-			</div>
+                <img alt="colour overlay" class="color_overlay" src="pictures/Rectangle%2024.png">
 
-			<div class="container">
+                <div class="big_image_elements">
+                    <h1 style="color: white;">JEWELLERY SETS</h1> <br>
+                    <form method="get" action="shop.html">
+                        <button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
+                    </form>
 
-				<img src="pictures/images_for_mobile/mobile_banner_4.jpg" alt="woman with necklace" class="big_image">
+                </div>
 
+            </div>
 
-				<div class="big_image_elements_mobile">
+            <div class="section2">
 
-					<h1 style="color: white">ON SALE</h1> <br>
+                <h2>ON SALE</h2>
+                <div class="front_page_images">
 
-					<form method="get" action="shop.html">
-						<button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
-					</form>
+                    <a href="shop.html" class="front_page_image_link">
+                        <img src="pictures/Image%2012.png" alt="picture of product" class="front_page_image">
+                    </a>
 
-				</div>
+                    <a href="shop.html" class="front_page_image_link">
+                        <img src="pictures/butterfly_ptoduct_2.jpg" alt="picture of product" class="front_page_image">
+                    </a>
 
-			</div>
+                    <a href="shop.html" class="front_page_image_link">
+                        <img src="pictures/Image%2013.png" alt="picture of product" class="front_page_image">
+                    </a>
+                </div>
 
-		</section>
 
-	</main>
+                <form method="get" action="shop.html">
+                    <button class="button" type="submit">DISCOVER MORE</button>
+                </form>
 
+            </div>
 
+        </section>
 
-	<footer class="footer_container">
 
 
-		<div class="footer_section">
+        <!-- mobile version o front page -->
 
-			<div class="footer_element">
+        <section class="mobile">
 
-				<h2 class="footer_header" style="color: white">HELP AND INFO</h2>
-				<div class="underline"></div>
-				<a class="footer_link" href="#">Help</a><br>
-				<a class="footer_link" href="#">Shipping and returns</a><br>
-				<a class="footer_link" href="#">Policy</a><br>
-				<a class="footer_link" href="#">Covid-19 information</a><br>
-				<a class="footer_link" href="contact.html">Contact me</a><br>
-				<a class="footer_link" href="#">Terms of service</a><br>
+            <div class="container">
 
-			</div>
+                <img src="pictures/images_for_mobile/mobile_banner_1.jpg" alt="woman with necklace" class="big_image">
 
-			<div class="footer_element">
+                <img alt="colour overlay" class="color_overlay" src="pictures/Rectangle%2033.png">
 
-				<h2 class="footer_header" style="color: white">CONTACT</h2>
 
-				<div class="underline"></div>
+                <div class="big_image_elements">
 
-				<span>Email:<br>moonvyjewellery@gmail.com
-				</span><br><br>
-				<span>Phone:<br>+45 12 34 56 78
-				</span>
+                    <h1 style="color: white">NEW ARRIVALS</h1> <br>
 
-			</div>
+                    <form method="get" action="shop.html">
+                        <button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
+                    </form>
 
-			<div class="footer_element">
 
-				<h2 class="footer_header" style="color: white">FOLLOW</h2>
+                </div>
 
-				<div class="underline"></div>
+                <img src="pictures/Path%2036.png" alt="arrow" class="arrow bounce">
 
-				<div>
-					<a class="no_underline" href="https://www.instagram.com/moonvy_jewellery/"><img alt="instagram logo" class="some_logo" src="pictures/white-instagram-icon-png.png"> </a>
-					<a href="https://www.tiktok.com/@moonvy_jewellery?"><img alt="tiktok logo" class="some_logo" src="pictures/tiktok-48.png"> </a>
-				</div>
+            </div>
 
-			</div>
+            <div class="container">
 
-		</div>
+                <img src="pictures/images_for_mobile/mobile_banner_2.jpg" alt="woman with necklace" class="big_image">
 
 
+                <div class="big_image_elements_mobile">
 
-	</footer>
+                    <h1 style="color: white">NOW TRENDING</h1> <br>
 
-	<!-- scripts -->
-	<script src="js/js.js"></script>
-</body></html>
+                    <form method="get" action="shop.html">
+                        <button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <img src="pictures/images_for_mobile/mobile_banner_3.jpg" alt="woman with necklace" class="big_image">
+
+                <img alt="colour overlay" class="color_overlay" src="pictures/Rectangle%2033.png">
+
+
+                <div class="big_image_elements">
+
+                    <h1 style="color: white">JEWELLERY SETS</h1> <br>
+
+                    <form method="get" action="shop.html">
+                        <button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+
+                <img src="pictures/images_for_mobile/mobile_banner_4.jpg" alt="woman with necklace" class="big_image">
+
+
+                <div class="big_image_elements_mobile">
+
+                    <h1 style="color: white">ON SALE</h1> <br>
+
+                    <form method="get" action="shop.html">
+                        <button class="button" type="submit" style="margin-top: -20px">DISCOVER MORE</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer_container">
+
+
+        <div class="footer_section">
+
+            <div class="footer_element">
+
+                <h2 class="footer_header" style="color: white">HELP AND INFO</h2>
+                <div class="underline"></div>
+                <a class="footer_link" href="#">Help</a><br>
+                <a class="footer_link" href="#">Shipping and returns</a><br>
+                <a class="footer_link" href="#">Policy</a><br>
+                <a class="footer_link" href="#">Covid-19 information</a><br>
+                <a class="footer_link" href="contact.html">Contact me</a><br>
+                <a class="footer_link" href="#">Terms of service</a><br>
+
+            </div>
+
+            <div class="footer_element">
+
+                <h2 class="footer_header" style="color: white">CONTACT</h2>
+
+                <div class="underline"></div>
+
+                <span>Email:<br>moonvyjewellery@gmail.com
+                </span><br><br>
+                <span>Phone:<br>+45 12 34 56 78
+                </span>
+
+            </div>
+
+            <div class="footer_element">
+
+                <h2 class="footer_header" style="color: white">FOLLOW</h2>
+
+                <div class="underline"></div>
+
+                <div>
+                    <a class="no_underline" href="https://www.instagram.com/moonvy_jewellery/"><img alt="instagram logo" class="some_logo" src="pictures/white-instagram-icon-png.png"> </a>
+                    <a href="https://www.tiktok.com/@moonvy_jewellery?"><img alt="tiktok logo" class="some_logo" src="pictures/tiktok-48.png"> </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/js.js"></script>
+    <script src="js/chatbox.js"></script>
+</body>
+
+</html>
