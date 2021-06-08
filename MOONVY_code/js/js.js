@@ -14,7 +14,11 @@ function showSlidesFrontpage() {
 	if (slideIndexFrontpage > slidesFrontpage.length) {
 		slideIndexFrontpage = 1
 	}
-	slidesFrontpage[slideIndexFrontpage - 1].style.display = "block";
+	try {
+		slidesFrontpage[slideIndexFrontpage - 1].style.display = "block";
+	} catch {
+		console.log('cannot read style property')
+	}
 	setTimeout(showSlidesFrontpage, 5000);
 }
 
@@ -34,7 +38,11 @@ function showSlidesMobile() {
 	if (slideIndexMobile > slidesMobile.length) {
 		slideIndexMobile = 1
 	}
-	slidesMobile[slideIndexMobile - 1].style.display = "block";
+	try {
+		slidesMobile[slideIndexMobile - 1].style.display = "block";
+	} catch {
+		console.log('cannot read style property')
+	}
 	setTimeout(showSlidesMobile, 5000); // Change image every 2 seconds
 }
 
@@ -221,6 +229,14 @@ function showSlides(n) {
 	for (i = 0; i < dots.length; i++) {
 		dots[i].className = dots[i].className.replace(" active", "");
 	}
-	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active";
+	try {
+		slides[slideIndex - 1].style.display = "block";
+	} catch {
+		console.log('cannot read style property')
+	}
+	try {
+		dots[slideIndex - 1].className += " active";
+	} catch {
+		console.log('cannot read className property')
+	}
 }
