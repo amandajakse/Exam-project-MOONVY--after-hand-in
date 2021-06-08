@@ -2,6 +2,55 @@
 
 /* image on the top of the page */
 
+/* Slideshow container */
+.slideshow_container {
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlidesFrontpage {
+	display: none;
+	width: 100%;
+}
+
+.mySlidesMobile {
+	display: none;
+	width: 100%;
+}
+
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+
+
+
 .container {
 	position: relative;
 	text-align: center;
@@ -14,7 +63,8 @@
 .color_overlay {
 	position: absolute;
 	width: 100%;
-	left: 0px
+	left: 0px;
+	top: 0px;
 }
 
 .big_image_elements {

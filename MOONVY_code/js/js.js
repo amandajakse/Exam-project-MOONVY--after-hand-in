@@ -1,27 +1,41 @@
 /** HERE WE WRITE JAVASCRIPT **/
 
-/** changeing images on home page **/
-var image = document.getElementById("image");
-var currentImage = 0;
-var images = ["pictures/banner_picture_1.jpg", "pictures/banner_picture_2.jpg", "pictures/banner_picture_3.jpg"]
+/** slideshow on home page - https://www.w3schools.com/howto/howto_js_slideshow.asp **/
+var slideIndexFrontpage = 0;
+showSlidesFrontpage();
 
-function changePhotoLoop() {
-
-	try {
-		image.src = images[currentImage]
-	} catch {
-		console.log('The id image is not found on this page')
+function showSlidesFrontpage() {
+	var f;
+	var slidesFrontpage = document.getElementsByClassName("mySlidesFrontpage");
+	for (f = 0; f < slidesFrontpage.length; f++) {
+		slidesFrontpage[f].style.display = "none";
 	}
-
-	if (++currentImage >= images.length)
-		currentImage = 0;
-
+	slideIndexFrontpage++;
+	if (slideIndexFrontpage > slidesFrontpage.length) {
+		slideIndexFrontpage = 1
+	}
+	slidesFrontpage[slideIndexFrontpage - 1].style.display = "block";
+	setTimeout(showSlidesFrontpage, 5000);
 }
 
-try {
-	setInterval(changePhotoLoop, 5000)
-} catch {
-	console.log('setInterval only works on certain pages')
+
+/** slideshow on home page - https://www.w3schools.com/howto/howto_js_slideshow.asp **/
+
+var slideIndexMobile = 0;
+showSlidesMobile();
+
+function showSlidesMobile() {
+	var m;
+	var slidesMobile = document.getElementsByClassName("mySlidesMobile");
+	for (m = 0; m < slidesMobile.length; m++) {
+		slidesMobile[m].style.display = "none";
+	}
+	slideIndexMobile++;
+	if (slideIndexMobile > slidesMobile.length) {
+		slideIndexMobile = 1
+	}
+	slidesMobile[slideIndexMobile - 1].style.display = "block";
+	setTimeout(showSlidesMobile, 5000); // Change image every 2 seconds
 }
 
 
@@ -210,6 +224,3 @@ function showSlides(n) {
 	slides[slideIndex - 1].style.display = "block";
 	dots[slideIndex - 1].className += " active";
 }
-
-
-
