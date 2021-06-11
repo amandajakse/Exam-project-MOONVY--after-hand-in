@@ -52,7 +52,13 @@ function showSlidesMobile() {
 /** filter options can be selected on shop page **/
 
 function myFunction1() {
-	document.getElementById("filter_button1").style.cssText = "opacity: 100%; font-weight: 700;";
+	var filterBtn = document.getElementById("filter_button1");
+
+	if (filterBtn.classList.contains("active_button")) {
+		filterBtn.classList.remove("active_button");
+	} else {
+		filterBtn.classList.add("active_button");
+	}
 }
 
 function myFunction2() {
