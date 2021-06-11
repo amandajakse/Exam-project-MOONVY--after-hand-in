@@ -52,33 +52,63 @@ function showSlidesMobile() {
 /** filter options can be selected on shop page **/
 
 function myFunction1() {
-	var filterBtn = document.getElementById("filter_button1");
+	var filterBtn1 = document.getElementById("filter_button1");
 
-	if (filterBtn.classList.contains("active_button")) {
-		filterBtn.classList.remove("active_button");
+	if (filterBtn1.classList.contains("active_button")) {
+		filterBtn1.classList.remove("active_button");
 	} else {
-		filterBtn.classList.add("active_button");
+		filterBtn1.classList.add("active_button");
 	}
 }
 
 function myFunction2() {
-	document.getElementById("filter_button2").style.cssText = "opacity: 100%; font-weight: 700;";
+	var filterBtn2 = document.getElementById("filter_button2");
+
+	if (filterBtn2.classList.contains("active_button")) {
+		filterBtn2.classList.remove("active_button");
+	} else {
+		filterBtn2.classList.add("active_button");
+	}
 }
 
 function myFunction3() {
-	document.getElementById("filter_button3").style.cssText = "opacity: 100%; font-weight: 700;";
+	var filterBtn3 = document.getElementById("filter_button3");
+
+	if (filterBtn3.classList.contains("active_button")) {
+		filterBtn3.classList.remove("active_button");
+	} else {
+		filterBtn3.classList.add("active_button");
+	}
 }
 
 function myFunction4() {
-	document.getElementById("filter_button4").style.cssText = "opacity: 100%; font-weight: 700;";
+	var filterBtn4 = document.getElementById("filter_button4");
+
+	if (filterBtn4.classList.contains("active_button")) {
+		filterBtn4.classList.remove("active_button");
+	} else {
+		filterBtn4.classList.add("active_button");
+	}
 }
 
 function myFunction5() {
-	document.getElementById("filter_button5").style.cssText = "opacity: 100%; font-weight: 700;";
+	var filterBtn5 = document.getElementById("filter_button5");
+
+	if (filterBtn5.classList.contains("active_button")) {
+		filterBtn5.classList.remove("active_button");
+	} else {
+		filterBtn5.classList.add("active_button");
+	}
 }
 
 function myFunction6() {
-	document.getElementById("filter_button6").style.cssText = "opacity: 100%; font-weight: 700;";
+	var filterBtn6 = document.getElementById("filter_button6");
+
+	if (filterBtn6.classList.contains("active_button")) {
+		filterBtn6.classList.remove("active_button");
+	} else {
+		filterBtn6.classList.add("active_button");
+	}
 }
 
 
