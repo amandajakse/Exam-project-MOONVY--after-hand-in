@@ -13,6 +13,9 @@ html {
 	font-size: 100%;
 	font-family: 'Poppins', sans-serif;
 	background-color: white;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
 }
 
 html,
@@ -26,11 +29,6 @@ body {
 	margin: 0 auto;
 }
 
-html {
-	padding: 0;
-	margin: 0;
-	max-width: 100%;
-}
 
 h1,
 h2,
