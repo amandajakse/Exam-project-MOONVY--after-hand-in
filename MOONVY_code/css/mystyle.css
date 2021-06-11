@@ -6,12 +6,18 @@
 	padding: 0;
 	border: 0;
 	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html {
 	font-size: 100%;
 	font-family: 'Poppins', sans-serif;
 	background-color: white;
+}
+
+html,
+body {
+	overflow-x: hidden;
 }
 
 .page_body {
@@ -23,6 +29,7 @@ html {
 html {
 	padding: 0;
 	margin: 0;
+	max-width: 100%;
 }
 
 h1,
@@ -55,10 +62,12 @@ h3 {
 	top: 0;
 	z-index: 100;
 	width: 100%;
+	max-width: 100%
 }
 
 .header_top {
 	background-color: #DBBEC0;
+	max-width: 100%;
 }
 
 
@@ -88,6 +97,7 @@ h3 {
 	display: block;
 	height: 70px;
 	margin: auto;
+	max-width: 100%;
 }
 
 .bag_icon {
@@ -112,10 +122,12 @@ h3 {
 	padding: 60px;
 	color: white;
 	margin-top: 40px;
+	max-width: 100%
 }
 
 .footer_header {
 	margin-bottom: -10px;
+	max-width: 100%;
 }
 
 .some_logo {
