@@ -189,6 +189,10 @@ h3 {
 	color: white;
 }
 
+.menu_some_icons {
+	display: flex;
+}
+
 .menu_some_icon {
 	height: 50px;
 	margin: 10px 10px 0 0;
@@ -201,6 +205,7 @@ h3 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 
 
 @media only screen and (min-width: 800px) {
