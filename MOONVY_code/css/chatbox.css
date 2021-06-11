@@ -131,7 +131,7 @@ link: https://codepen.io/mehmetmert/pen/zbKpv **/
         left: 0;
         right: auto;
         position: fixed;
-        width: 95%;
+        width: 100%;
         z-index: 1;
     }
     
