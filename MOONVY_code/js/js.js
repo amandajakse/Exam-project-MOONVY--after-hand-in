@@ -1,5 +1,40 @@
 /** HERE WE WRITE JAVASCRIPT **/
 
+/* search field - https://www.w3schools.com/howto/howto_js_filter_lists.asp */
+
+/* show serch bar on click */
+function showSearch() {
+	var search = document.getElementById("searchField");
+
+	if (search.classList.contains("visible")) {
+		search.classList.remove("visible");
+	} else {
+		search.classList.add("visible");
+	}
+}
+
+function searchFunction() {
+	// Declare variables
+	var input, filter, ul, li, t, y, txtValue;
+	input = document.getElementById('productName');
+	filter = input.value.toUpperCase();
+	ul = document.getElementById("myUL");
+	li = ul.getElementsByTagName('li');
+
+	// Loop through all list items, and hide those who don't match the search query
+	for (y = 0; y < li.length; y++) {
+		t = li[y].getElementsByTagName("a")[0];
+		txtValue = t.textContent || t.innerText;
+		if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			li[y].style.display = "";
+		} else {
+			li[y].style.display = "none";
+		}
+	}
+}
+
+
+
 /** slideshow on home page - https://www.w3schools.com/howto/howto_js_slideshow.asp **/
 var slideIndexFrontpage = 0;
 showSlidesFrontpage();

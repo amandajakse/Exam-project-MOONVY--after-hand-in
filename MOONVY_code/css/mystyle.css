@@ -110,7 +110,60 @@ h3 {
 	position: absolute;
 	right: 80px;
 	top: 22px;
+	cursor: pointer;
 }
+
+/* search field */
+
+.search {
+	display: none;
+	position: absolute;
+	right: 0;
+	max-height: 100%;
+	width: 300px;
+}
+
+.visible {
+	display: block;
+}
+
+#productName {
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+	box-shadow: -3px 0 6px rgba(0, 0, 0, 0.16);
+}
+
+#myUL {
+	/* Remove default list styling */
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+#myUL li {
+	border: 1px solid #ddd;
+	margin-top: -1px;
+	background-color: white;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+}
+
+#myUL li:hover:not(.header) {
+	background-color: #eee;
+	/* Add a hover effect to all links, except for headers */
+}
+
+.search_link {
+	text-decoration: none;
+	color: #9A6E6E;
+}
+
+
 
 /**-----FOOTER-----**/
 
