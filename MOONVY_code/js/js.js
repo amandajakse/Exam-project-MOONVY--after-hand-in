@@ -58,7 +58,7 @@ function showSlidesFrontpage() {
 }
 
 
-/** slideshow on home page - https://www.w3schools.com/howto/howto_js_slideshow.asp **/
+/** mobile version for slideshow on home page - https://www.w3schools.com/howto/howto_js_slideshow.asp **/
 
 var slideIndexMobile = 0;
 showSlidesMobile();
@@ -278,6 +278,10 @@ function closeMenu() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
 
 function currentSlide(n) {
 	showSlides(slideIndex = n);
