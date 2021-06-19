@@ -90,6 +90,12 @@
 	padding: 10.5px;
 }
 
+.button_link{
+	text-decoration: none;
+	color: white;
+}
+
+
 .button:hover {
 	background-color: #DBBEC0;
 }
