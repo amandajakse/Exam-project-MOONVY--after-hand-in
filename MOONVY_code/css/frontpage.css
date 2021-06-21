@@ -100,7 +100,9 @@
 	background-color: #DBBEC0;
 }
 
-
+h1 {
+	margin-bottom: 20px;
+}
 
 
 /*bouncing arrow https://codepen.io/bitstarr/pen/XjaJGz*/
@@ -186,7 +188,7 @@
 @media only screen and (max-width: 800px) {
 
 	.container {
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 	}
 
 	.big_image_elements_mobile {
