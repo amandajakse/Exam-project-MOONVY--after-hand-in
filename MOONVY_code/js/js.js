@@ -163,18 +163,31 @@ var span = document.getElementsByClassName("close")[0];
 var btnClose = document.getElementsByClassName("close_button")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function () {
-	modal.style.display = "block";
+try {
+	btn.onclick = function () {
+		modal.style.display = "block";
+	}
+} catch {
+	console.log('page without pop up window button')
 }
 
+
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-	modal.style.display = "none";
+try {
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+} catch {
+	console.log('page without pop up window button')
 }
 
 // When the user clicks on button, close the modal
-btnClose.onclick = function () {
-	modal.style.display = "none";
+try {
+	btnClose.onclick = function () {
+		modal.style.display = "none";
+	}
+} catch {
+	console.log('page without pop up window button')
 }
 
 // When the user clicks anywhere outside of the modal, close it
